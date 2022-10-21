@@ -1,0 +1,6536 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/jquery.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/ResizeSensor.js"></script>
+
+            <link rel="stylesheet"  href="https://assets.pyecharts.org/assets/jquery-ui.css">
+
+</head>
+<body>
+    <style>.box {  }; </style>
+        
+    <div class="box">
+                <div id="001" class="chart-container" style="position: absolute; width: 900px; height: 500px; top: 50px; left: 40px;"></div>
+    <script>
+        var chart_001 = echarts.init(
+            document.getElementById('001'), 'white', {renderer: 'canvas'});
+        var option_001 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "\u76d1\u63a7\u70b9\u4f4d\u6570\u91cf",
+            "legendHoverLink": true,
+            "data": [
+                10810,
+                10805,
+                10803,
+                10819,
+                10821,
+                10807,
+                10780,
+                10765,
+                10752,
+                10755,
+                10808,
+                10824,
+                10807,
+                10826,
+                10830,
+                10818,
+                10798,
+                10805,
+                10846,
+                10864,
+                10851,
+                10853,
+                10699,
+                10634
+            ],
+            "showBackground": false,
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u76d1\u63a7\u70b9\u4f4d\u6570\u91cf"
+            ],
+            "selected": {
+                "\u76d1\u63a7\u70b9\u4f4d\u6570\u91cf": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "2022-09-20",
+                "2022-09-21",
+                "2022-09-22",
+                "2022-09-23",
+                "2022-09-24",
+                "2022-09-25",
+                "2022-09-26",
+                "2022-09-27",
+                "2022-09-28",
+                "2022-09-29",
+                "2022-09-30",
+                "2022-10-01",
+                "2022-10-02",
+                "2022-10-03",
+                "2022-10-04",
+                "2022-10-05",
+                "2022-10-06",
+                "2022-10-07",
+                "2022-10-08",
+                "2022-10-09",
+                "2022-10-10",
+                "2022-10-11",
+                "2022-10-12",
+                "2022-10-13"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": true,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "26\u57ce\u5e02\u76d1\u63a7\u70b9\u4f4d\u6570\u91cf",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "dataZoom": [
+        {
+            "show": true,
+            "type": "slider",
+            "realtime": true,
+            "start": 40,
+            "end": 100,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        }
+    ]
+};
+        chart_001.setOption(option_001);
+    </script>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>                <div id="002" class="chart-container" style="position: absolute; width: 900px; height: 500px; top: 50px; left: 980px;"></div>
+    <script>
+        var chart_002 = echarts.init(
+            document.getElementById('002'), 'white', {renderer: 'canvas'});
+        var option_002 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "\u76d1\u63a7\u70b9\u4f4d\u6570\u91cf",
+            "legendHoverLink": true,
+            "data": [
+                247,
+                914,
+                1179,
+                1292,
+                788,
+                33,
+                169,
+                80,
+                207,
+                606,
+                399,
+                448,
+                277,
+                238,
+                730,
+                408,
+                112,
+                284,
+                454,
+                210,
+                233,
+                338,
+                88,
+                67,
+                239,
+                666,
+                773,
+                85
+            ],
+            "showBackground": false,
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u76d1\u63a7\u70b9\u4f4d\u6570\u91cf"
+            ],
+            "selected": {
+                "\u76d1\u63a7\u70b9\u4f4d\u6570\u91cf": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "\u4fdd\u5b9a\u5e02",
+                "\u5317\u4eac\u5e02",
+                "\u5510\u5c71\u5e02",
+                "\u5929\u6d25\u5e02",
+                "\u5b89\u9633\u5e02",
+                "\u5b9a\u5dde\u5e02",
+                "\u5eca\u574a\u5e02",
+                "\u5f00\u5c01\u5e02",
+                "\u5fb7\u5dde\u5e02",
+                "\u65b0\u4e61\u5e02",
+                "\u6ca7\u5dde\u5e02",
+                "\u6d4e\u5357\u5e02",
+                "\u6d4e\u5b81\u5e02",
+                "\u6d4e\u6e90\u5e02",
+                "\u6dc4\u535a\u5e02",
+                "\u6ee8\u5dde\u5e02",
+                "\u6fee\u9633\u5e02",
+                "\u7126\u4f5c\u5e02",
+                "\u77f3\u5bb6\u5e84\u5e02",
+                "\u79e6\u7687\u5c9b\u5e02",
+                "\u804a\u57ce\u5e02",
+                "\u83cf\u6cfd\u5e02",
+                "\u8861\u6c34\u5e02",
+                "\u8f9b\u96c6\u5e02",
+                "\u90a2\u53f0\u5e02",
+                "\u90af\u90f8\u5e02",
+                "\u90d1\u5dde\u5e02",
+                "\u9e64\u58c1\u5e02"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": true,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "26\u57ce\u5e02\u76d1\u63a7\u70b9\u4f4d\u6570\u91cf",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "dataZoom": [
+        {
+            "show": true,
+            "type": "slider",
+            "realtime": true,
+            "start": 40,
+            "end": 100,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        }
+    ]
+};
+        chart_002.setOption(option_002);
+    </script>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>                <div id="003" class="chart-container" style="position: absolute; width: 900px; height: 500px; top: 600px; left: 40px;"></div>
+    <script>
+        var chart_003 = echarts.init(
+            document.getElementById('003'), 'white', {renderer: 'canvas'});
+        var option_003 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    580962.0
+                ],
+                [
+                    "2022-09-21",
+                    556838.0
+                ],
+                [
+                    "2022-09-22",
+                    551935.0
+                ],
+                [
+                    "2022-09-23",
+                    574177.0
+                ],
+                [
+                    "2022-09-24",
+                    593059.0
+                ],
+                [
+                    "2022-09-25",
+                    580770.0
+                ],
+                [
+                    "2022-09-26",
+                    568905.0
+                ],
+                [
+                    "2022-09-27",
+                    565065.0
+                ],
+                [
+                    "2022-09-28",
+                    554491.0
+                ],
+                [
+                    "2022-09-29",
+                    548095.0
+                ],
+                [
+                    "2022-09-30",
+                    545144.0
+                ],
+                [
+                    "2022-10-01",
+                    545433.0
+                ],
+                [
+                    "2022-10-02",
+                    574499.0
+                ],
+                [
+                    "2022-10-03",
+                    568546.0
+                ],
+                [
+                    "2022-10-04",
+                    573938.0
+                ],
+                [
+                    "2022-10-05",
+                    574300.0
+                ],
+                [
+                    "2022-10-06",
+                    564909.0
+                ],
+                [
+                    "2022-10-07",
+                    544958.0
+                ],
+                [
+                    "2022-10-08",
+                    535099.0
+                ],
+                [
+                    "2022-10-09",
+                    529320.0
+                ],
+                [
+                    "2022-10-10",
+                    549567.0
+                ],
+                [
+                    "2022-10-11",
+                    509734.0
+                ],
+                [
+                    "2022-10-12",
+                    497338.0
+                ],
+                [
+                    "2022-10-13",
+                    485339.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    55266.0
+                ],
+                [
+                    "2022-09-21",
+                    53462.0
+                ],
+                [
+                    "2022-09-22",
+                    53575.0
+                ],
+                [
+                    "2022-09-23",
+                    54600.0
+                ],
+                [
+                    "2022-09-24",
+                    55735.0
+                ],
+                [
+                    "2022-09-25",
+                    55219.0
+                ],
+                [
+                    "2022-09-26",
+                    54639.0
+                ],
+                [
+                    "2022-09-27",
+                    54809.0
+                ],
+                [
+                    "2022-09-28",
+                    53411.0
+                ],
+                [
+                    "2022-09-29",
+                    53108.0
+                ],
+                [
+                    "2022-09-30",
+                    52992.0
+                ],
+                [
+                    "2022-10-01",
+                    51923.0
+                ],
+                [
+                    "2022-10-02",
+                    52777.0
+                ],
+                [
+                    "2022-10-03",
+                    53922.0
+                ],
+                [
+                    "2022-10-04",
+                    53508.0
+                ],
+                [
+                    "2022-10-05",
+                    54492.0
+                ],
+                [
+                    "2022-10-06",
+                    54058.0
+                ],
+                [
+                    "2022-10-07",
+                    53884.0
+                ],
+                [
+                    "2022-10-08",
+                    51857.0
+                ],
+                [
+                    "2022-10-09",
+                    51160.0
+                ],
+                [
+                    "2022-10-10",
+                    51620.0
+                ],
+                [
+                    "2022-10-11",
+                    49564.0
+                ],
+                [
+                    "2022-10-12",
+                    49571.0
+                ],
+                [
+                    "2022-10-13",
+                    48240.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    245519.0
+                ],
+                [
+                    "2022-09-21",
+                    239975.0
+                ],
+                [
+                    "2022-09-22",
+                    235772.0
+                ],
+                [
+                    "2022-09-23",
+                    238147.0
+                ],
+                [
+                    "2022-09-24",
+                    250430.0
+                ],
+                [
+                    "2022-09-25",
+                    242806.0
+                ],
+                [
+                    "2022-09-26",
+                    244688.0
+                ],
+                [
+                    "2022-09-27",
+                    243153.0
+                ],
+                [
+                    "2022-09-28",
+                    236705.0
+                ],
+                [
+                    "2022-09-29",
+                    233166.0
+                ],
+                [
+                    "2022-09-30",
+                    234304.0
+                ],
+                [
+                    "2022-10-01",
+                    228923.0
+                ],
+                [
+                    "2022-10-02",
+                    238466.0
+                ],
+                [
+                    "2022-10-03",
+                    231053.0
+                ],
+                [
+                    "2022-10-04",
+                    226049.0
+                ],
+                [
+                    "2022-10-05",
+                    234976.0
+                ],
+                [
+                    "2022-10-06",
+                    231469.0
+                ],
+                [
+                    "2022-10-07",
+                    220763.0
+                ],
+                [
+                    "2022-10-08",
+                    216650.0
+                ],
+                [
+                    "2022-10-09",
+                    207699.0
+                ],
+                [
+                    "2022-10-10",
+                    214636.0
+                ],
+                [
+                    "2022-10-11",
+                    204522.0
+                ],
+                [
+                    "2022-10-12",
+                    201181.0
+                ],
+                [
+                    "2022-10-13",
+                    195220.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)",
+                "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)",
+                "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)"
+            ],
+            "selected": {
+                "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)": true,
+                "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)": true,
+                "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "2022-09-20",
+                "2022-09-21",
+                "2022-09-22",
+                "2022-09-23",
+                "2022-09-24",
+                "2022-09-25",
+                "2022-09-26",
+                "2022-09-27",
+                "2022-09-28",
+                "2022-09-29",
+                "2022-09-30",
+                "2022-10-01",
+                "2022-10-02",
+                "2022-10-03",
+                "2022-10-04",
+                "2022-10-05",
+                "2022-10-06",
+                "2022-10-07",
+                "2022-10-08",
+                "2022-10-09",
+                "2022-10-10",
+                "2022-10-11",
+                "2022-10-12",
+                "2022-10-13"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u6c61\u67d3\u7269\u6392\u653e\u91cf",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "dataZoom": [
+        {
+            "show": true,
+            "type": "slider",
+            "realtime": true,
+            "start": 40,
+            "end": 100,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        }
+    ]
+};
+        chart_003.setOption(option_003);
+    </script>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>                <div id="004" class="chart-container" style="position: absolute; width: 900px; height: 500px; top: 600px; left: 980px;"></div>
+    <script>
+        var chart_004 = echarts.init(
+            document.getElementById('004'), 'white', {renderer: 'canvas'});
+        var option_004 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    16042.0
+                ],
+                [
+                    "2022-09-21",
+                    14307.0
+                ],
+                [
+                    "2022-09-22",
+                    13294.0
+                ],
+                [
+                    "2022-09-23",
+                    13816.0
+                ],
+                [
+                    "2022-09-24",
+                    14481.0
+                ],
+                [
+                    "2022-09-25",
+                    14567.0
+                ],
+                [
+                    "2022-09-26",
+                    15291.0
+                ],
+                [
+                    "2022-09-27",
+                    15157.0
+                ],
+                [
+                    "2022-09-28",
+                    15578.0
+                ],
+                [
+                    "2022-09-29",
+                    15819.0
+                ],
+                [
+                    "2022-09-30",
+                    14808.0
+                ],
+                [
+                    "2022-10-01",
+                    12689.0
+                ],
+                [
+                    "2022-10-02",
+                    13656.0
+                ],
+                [
+                    "2022-10-03",
+                    14215.0
+                ],
+                [
+                    "2022-10-04",
+                    15661.0
+                ],
+                [
+                    "2022-10-05",
+                    15559.0
+                ],
+                [
+                    "2022-10-06",
+                    14940.0
+                ],
+                [
+                    "2022-10-07",
+                    14174.0
+                ],
+                [
+                    "2022-10-08",
+                    14256.0
+                ],
+                [
+                    "2022-10-09",
+                    14553.0
+                ],
+                [
+                    "2022-10-10",
+                    14676.0
+                ],
+                [
+                    "2022-10-11",
+                    15397.0
+                ],
+                [
+                    "2022-10-12",
+                    16820.0
+                ],
+                [
+                    "2022-10-13",
+                    20506.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    283.0
+                ],
+                [
+                    "2022-09-21",
+                    279.0
+                ],
+                [
+                    "2022-09-22",
+                    277.0
+                ],
+                [
+                    "2022-09-23",
+                    434.0
+                ],
+                [
+                    "2022-09-24",
+                    321.0
+                ],
+                [
+                    "2022-09-25",
+                    355.0
+                ],
+                [
+                    "2022-09-26",
+                    337.0
+                ],
+                [
+                    "2022-09-27",
+                    321.0
+                ],
+                [
+                    "2022-09-28",
+                    321.0
+                ],
+                [
+                    "2022-09-29",
+                    321.0
+                ],
+                [
+                    "2022-09-30",
+                    1164.0
+                ],
+                [
+                    "2022-10-01",
+                    348.0
+                ],
+                [
+                    "2022-10-02",
+                    318.0
+                ],
+                [
+                    "2022-10-03",
+                    316.0
+                ],
+                [
+                    "2022-10-04",
+                    306.0
+                ],
+                [
+                    "2022-10-05",
+                    336.0
+                ],
+                [
+                    "2022-10-06",
+                    300.0
+                ],
+                [
+                    "2022-10-07",
+                    273.0
+                ],
+                [
+                    "2022-10-08",
+                    318.0
+                ],
+                [
+                    "2022-10-09",
+                    355.0
+                ],
+                [
+                    "2022-10-10",
+                    324.0
+                ],
+                [
+                    "2022-10-11",
+                    332.0
+                ],
+                [
+                    "2022-10-12",
+                    377.0
+                ],
+                [
+                    "2022-10-13",
+                    395.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    1149.0
+                ],
+                [
+                    "2022-09-21",
+                    1140.0
+                ],
+                [
+                    "2022-09-22",
+                    1082.0
+                ],
+                [
+                    "2022-09-23",
+                    1150.0
+                ],
+                [
+                    "2022-09-24",
+                    1311.0
+                ],
+                [
+                    "2022-09-25",
+                    1294.0
+                ],
+                [
+                    "2022-09-26",
+                    1291.0
+                ],
+                [
+                    "2022-09-27",
+                    1223.0
+                ],
+                [
+                    "2022-09-28",
+                    1276.0
+                ],
+                [
+                    "2022-09-29",
+                    1209.0
+                ],
+                [
+                    "2022-09-30",
+                    1376.0
+                ],
+                [
+                    "2022-10-01",
+                    1191.0
+                ],
+                [
+                    "2022-10-02",
+                    1144.0
+                ],
+                [
+                    "2022-10-03",
+                    1100.0
+                ],
+                [
+                    "2022-10-04",
+                    1109.0
+                ],
+                [
+                    "2022-10-05",
+                    1079.0
+                ],
+                [
+                    "2022-10-06",
+                    1087.0
+                ],
+                [
+                    "2022-10-07",
+                    1079.0
+                ],
+                [
+                    "2022-10-08",
+                    1100.0
+                ],
+                [
+                    "2022-10-09",
+                    1185.0
+                ],
+                [
+                    "2022-10-10",
+                    1151.0
+                ],
+                [
+                    "2022-10-11",
+                    1087.0
+                ],
+                [
+                    "2022-10-12",
+                    1158.0
+                ],
+                [
+                    "2022-10-13",
+                    1191.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)",
+                "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)",
+                "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)"
+            ],
+            "selected": {
+                "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)": true,
+                "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)": true,
+                "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "2022-09-20",
+                "2022-09-21",
+                "2022-09-22",
+                "2022-09-23",
+                "2022-09-24",
+                "2022-09-25",
+                "2022-09-26",
+                "2022-09-27",
+                "2022-09-28",
+                "2022-09-29",
+                "2022-09-30",
+                "2022-10-01",
+                "2022-10-02",
+                "2022-10-03",
+                "2022-10-04",
+                "2022-10-05",
+                "2022-10-06",
+                "2022-10-07",
+                "2022-10-08",
+                "2022-10-09",
+                "2022-10-10",
+                "2022-10-11",
+                "2022-10-12",
+                "2022-10-13"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u5317\u4eac\u5e02\u5404\u7c7b\u6c61\u67d3\u7269\u6392\u653e\u91cf",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "dataZoom": [
+        {
+            "show": true,
+            "type": "slider",
+            "realtime": true,
+            "start": 40,
+            "end": 100,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        }
+    ]
+};
+        chart_004.setOption(option_004);
+    </script>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>                <div id="005" class="chart-container" style="position: absolute; width: 900px; height: 500px; top: 1150px; left: 40px;"></div>
+    <script>
+        var chart_005 = echarts.init(
+            document.getElementById('005'), 'white', {renderer: 'canvas'});
+        var option_005 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    40905.0
+                ],
+                [
+                    "2022-09-21",
+                    39848.0
+                ],
+                [
+                    "2022-09-22",
+                    39334.0
+                ],
+                [
+                    "2022-09-23",
+                    39872.0
+                ],
+                [
+                    "2022-09-24",
+                    42900.0
+                ],
+                [
+                    "2022-09-25",
+                    43560.0
+                ],
+                [
+                    "2022-09-26",
+                    41731.0
+                ],
+                [
+                    "2022-09-27",
+                    39623.0
+                ],
+                [
+                    "2022-09-28",
+                    40172.0
+                ],
+                [
+                    "2022-09-29",
+                    38167.0
+                ],
+                [
+                    "2022-09-30",
+                    40547.0
+                ],
+                [
+                    "2022-10-01",
+                    38487.0
+                ],
+                [
+                    "2022-10-02",
+                    38869.0
+                ],
+                [
+                    "2022-10-03",
+                    38960.0
+                ],
+                [
+                    "2022-10-04",
+                    40215.0
+                ],
+                [
+                    "2022-10-05",
+                    39912.0
+                ],
+                [
+                    "2022-10-06",
+                    38622.0
+                ],
+                [
+                    "2022-10-07",
+                    37526.0
+                ],
+                [
+                    "2022-10-08",
+                    39985.0
+                ],
+                [
+                    "2022-10-09",
+                    43615.0
+                ],
+                [
+                    "2022-10-10",
+                    46253.0
+                ],
+                [
+                    "2022-10-11",
+                    43214.0
+                ],
+                [
+                    "2022-10-12",
+                    43809.0
+                ],
+                [
+                    "2022-10-13",
+                    41161.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    2215.0
+                ],
+                [
+                    "2022-09-21",
+                    2184.0
+                ],
+                [
+                    "2022-09-22",
+                    2156.0
+                ],
+                [
+                    "2022-09-23",
+                    2173.0
+                ],
+                [
+                    "2022-09-24",
+                    2239.0
+                ],
+                [
+                    "2022-09-25",
+                    2146.0
+                ],
+                [
+                    "2022-09-26",
+                    2202.0
+                ],
+                [
+                    "2022-09-27",
+                    2139.0
+                ],
+                [
+                    "2022-09-28",
+                    2129.0
+                ],
+                [
+                    "2022-09-29",
+                    2147.0
+                ],
+                [
+                    "2022-09-30",
+                    2468.0
+                ],
+                [
+                    "2022-10-01",
+                    2315.0
+                ],
+                [
+                    "2022-10-02",
+                    2137.0
+                ],
+                [
+                    "2022-10-03",
+                    2201.0
+                ],
+                [
+                    "2022-10-04",
+                    2331.0
+                ],
+                [
+                    "2022-10-05",
+                    2084.0
+                ],
+                [
+                    "2022-10-06",
+                    2081.0
+                ],
+                [
+                    "2022-10-07",
+                    2108.0
+                ],
+                [
+                    "2022-10-08",
+                    2296.0
+                ],
+                [
+                    "2022-10-09",
+                    2263.0
+                ],
+                [
+                    "2022-10-10",
+                    2538.0
+                ],
+                [
+                    "2022-10-11",
+                    2545.0
+                ],
+                [
+                    "2022-10-12",
+                    2687.0
+                ],
+                [
+                    "2022-10-13",
+                    2426.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    10917.0
+                ],
+                [
+                    "2022-09-21",
+                    10889.0
+                ],
+                [
+                    "2022-09-22",
+                    9849.0
+                ],
+                [
+                    "2022-09-23",
+                    9758.0
+                ],
+                [
+                    "2022-09-24",
+                    10549.0
+                ],
+                [
+                    "2022-09-25",
+                    10525.0
+                ],
+                [
+                    "2022-09-26",
+                    10013.0
+                ],
+                [
+                    "2022-09-27",
+                    9550.0
+                ],
+                [
+                    "2022-09-28",
+                    9795.0
+                ],
+                [
+                    "2022-09-29",
+                    9406.0
+                ],
+                [
+                    "2022-09-30",
+                    10983.0
+                ],
+                [
+                    "2022-10-01",
+                    9872.0
+                ],
+                [
+                    "2022-10-02",
+                    10567.0
+                ],
+                [
+                    "2022-10-03",
+                    9685.0
+                ],
+                [
+                    "2022-10-04",
+                    10614.0
+                ],
+                [
+                    "2022-10-05",
+                    10239.0
+                ],
+                [
+                    "2022-10-06",
+                    9611.0
+                ],
+                [
+                    "2022-10-07",
+                    9517.0
+                ],
+                [
+                    "2022-10-08",
+                    10513.0
+                ],
+                [
+                    "2022-10-09",
+                    11134.0
+                ],
+                [
+                    "2022-10-10",
+                    12139.0
+                ],
+                [
+                    "2022-10-11",
+                    10387.0
+                ],
+                [
+                    "2022-10-12",
+                    11076.0
+                ],
+                [
+                    "2022-10-13",
+                    9859.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)",
+                "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)",
+                "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)"
+            ],
+            "selected": {
+                "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)": true,
+                "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)": true,
+                "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "2022-09-20",
+                "2022-09-21",
+                "2022-09-22",
+                "2022-09-23",
+                "2022-09-24",
+                "2022-09-25",
+                "2022-09-26",
+                "2022-09-27",
+                "2022-09-28",
+                "2022-09-29",
+                "2022-09-30",
+                "2022-10-01",
+                "2022-10-02",
+                "2022-10-03",
+                "2022-10-04",
+                "2022-10-05",
+                "2022-10-06",
+                "2022-10-07",
+                "2022-10-08",
+                "2022-10-09",
+                "2022-10-10",
+                "2022-10-11",
+                "2022-10-12",
+                "2022-10-13"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u5929\u6d25\u5e02\u5404\u7c7b\u6c61\u67d3\u7269\u6392\u653e\u91cf",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "dataZoom": [
+        {
+            "show": true,
+            "type": "slider",
+            "realtime": true,
+            "start": 40,
+            "end": 100,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        }
+    ]
+};
+        chart_005.setOption(option_005);
+    </script>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>                <div id="006" class="chart-container" style="position: absolute; width: 900px; height: 500px; top: 1150px; left: 980px;"></div>
+    <script>
+        var chart_006 = echarts.init(
+            document.getElementById('006'), 'white', {renderer: 'canvas'});
+        var option_006 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    226990.0
+                ],
+                [
+                    "2022-09-21",
+                    218786.0
+                ],
+                [
+                    "2022-09-22",
+                    212699.0
+                ],
+                [
+                    "2022-09-23",
+                    223249.0
+                ],
+                [
+                    "2022-09-24",
+                    233717.0
+                ],
+                [
+                    "2022-09-25",
+                    226609.0
+                ],
+                [
+                    "2022-09-26",
+                    231551.0
+                ],
+                [
+                    "2022-09-27",
+                    231107.0
+                ],
+                [
+                    "2022-09-28",
+                    230456.0
+                ],
+                [
+                    "2022-09-29",
+                    226502.0
+                ],
+                [
+                    "2022-09-30",
+                    224954.0
+                ],
+                [
+                    "2022-10-01",
+                    222075.0
+                ],
+                [
+                    "2022-10-02",
+                    229092.0
+                ],
+                [
+                    "2022-10-03",
+                    219915.0
+                ],
+                [
+                    "2022-10-04",
+                    218279.0
+                ],
+                [
+                    "2022-10-05",
+                    218662.0
+                ],
+                [
+                    "2022-10-06",
+                    217824.0
+                ],
+                [
+                    "2022-10-07",
+                    207550.0
+                ],
+                [
+                    "2022-10-08",
+                    205436.0
+                ],
+                [
+                    "2022-10-09",
+                    195594.0
+                ],
+                [
+                    "2022-10-10",
+                    201509.0
+                ],
+                [
+                    "2022-10-11",
+                    203235.0
+                ],
+                [
+                    "2022-10-12",
+                    199943.0
+                ],
+                [
+                    "2022-10-13",
+                    196512.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    13753.0
+                ],
+                [
+                    "2022-09-21",
+                    13395.0
+                ],
+                [
+                    "2022-09-22",
+                    13084.0
+                ],
+                [
+                    "2022-09-23",
+                    13297.0
+                ],
+                [
+                    "2022-09-24",
+                    13759.0
+                ],
+                [
+                    "2022-09-25",
+                    13677.0
+                ],
+                [
+                    "2022-09-26",
+                    13741.0
+                ],
+                [
+                    "2022-09-27",
+                    13808.0
+                ],
+                [
+                    "2022-09-28",
+                    13678.0
+                ],
+                [
+                    "2022-09-29",
+                    13569.0
+                ],
+                [
+                    "2022-09-30",
+                    13261.0
+                ],
+                [
+                    "2022-10-01",
+                    13183.0
+                ],
+                [
+                    "2022-10-02",
+                    13252.0
+                ],
+                [
+                    "2022-10-03",
+                    12868.0
+                ],
+                [
+                    "2022-10-04",
+                    12560.0
+                ],
+                [
+                    "2022-10-05",
+                    12753.0
+                ],
+                [
+                    "2022-10-06",
+                    13040.0
+                ],
+                [
+                    "2022-10-07",
+                    12824.0
+                ],
+                [
+                    "2022-10-08",
+                    12575.0
+                ],
+                [
+                    "2022-10-09",
+                    12060.0
+                ],
+                [
+                    "2022-10-10",
+                    12349.0
+                ],
+                [
+                    "2022-10-11",
+                    12635.0
+                ],
+                [
+                    "2022-10-12",
+                    12322.0
+                ],
+                [
+                    "2022-10-13",
+                    12093.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    111691.0
+                ],
+                [
+                    "2022-09-21",
+                    110543.0
+                ],
+                [
+                    "2022-09-22",
+                    108670.0
+                ],
+                [
+                    "2022-09-23",
+                    109754.0
+                ],
+                [
+                    "2022-09-24",
+                    117200.0
+                ],
+                [
+                    "2022-09-25",
+                    113044.0
+                ],
+                [
+                    "2022-09-26",
+                    116695.0
+                ],
+                [
+                    "2022-09-27",
+                    117560.0
+                ],
+                [
+                    "2022-09-28",
+                    114998.0
+                ],
+                [
+                    "2022-09-29",
+                    115145.0
+                ],
+                [
+                    "2022-09-30",
+                    113657.0
+                ],
+                [
+                    "2022-10-01",
+                    107817.0
+                ],
+                [
+                    "2022-10-02",
+                    110758.0
+                ],
+                [
+                    "2022-10-03",
+                    104219.0
+                ],
+                [
+                    "2022-10-04",
+                    102109.0
+                ],
+                [
+                    "2022-10-05",
+                    104628.0
+                ],
+                [
+                    "2022-10-06",
+                    103763.0
+                ],
+                [
+                    "2022-10-07",
+                    97875.0
+                ],
+                [
+                    "2022-10-08",
+                    97164.0
+                ],
+                [
+                    "2022-10-09",
+                    88287.0
+                ],
+                [
+                    "2022-10-10",
+                    89538.0
+                ],
+                [
+                    "2022-10-11",
+                    92224.0
+                ],
+                [
+                    "2022-10-12",
+                    91292.0
+                ],
+                [
+                    "2022-10-13",
+                    90290.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)",
+                "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)",
+                "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)"
+            ],
+            "selected": {
+                "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)": true,
+                "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)": true,
+                "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "2022-09-20",
+                "2022-09-21",
+                "2022-09-22",
+                "2022-09-23",
+                "2022-09-24",
+                "2022-09-25",
+                "2022-09-26",
+                "2022-09-27",
+                "2022-09-28",
+                "2022-09-29",
+                "2022-09-30",
+                "2022-10-01",
+                "2022-10-02",
+                "2022-10-03",
+                "2022-10-04",
+                "2022-10-05",
+                "2022-10-06",
+                "2022-10-07",
+                "2022-10-08",
+                "2022-10-09",
+                "2022-10-10",
+                "2022-10-11",
+                "2022-10-12",
+                "2022-10-13"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u5c71\u4e1c\u7701\u5404\u7c7b\u6c61\u67d3\u7269\u6392\u653e\u91cf",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "dataZoom": [
+        {
+            "show": true,
+            "type": "slider",
+            "realtime": true,
+            "start": 40,
+            "end": 100,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        }
+    ]
+};
+        chart_006.setOption(option_006);
+    </script>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>                <div id="007" class="chart-container" style="position: absolute; width: 900px; height: 500px; top: 1700px; left: 40px;"></div>
+    <script>
+        var chart_007 = echarts.init(
+            document.getElementById('007'), 'white', {renderer: 'canvas'});
+        var option_007 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    191391.0
+                ],
+                [
+                    "2022-09-21",
+                    184744.0
+                ],
+                [
+                    "2022-09-22",
+                    191708.0
+                ],
+                [
+                    "2022-09-23",
+                    193707.0
+                ],
+                [
+                    "2022-09-24",
+                    194856.0
+                ],
+                [
+                    "2022-09-25",
+                    188769.0
+                ],
+                [
+                    "2022-09-26",
+                    175573.0
+                ],
+                [
+                    "2022-09-27",
+                    171360.0
+                ],
+                [
+                    "2022-09-28",
+                    165691.0
+                ],
+                [
+                    "2022-09-29",
+                    163795.0
+                ],
+                [
+                    "2022-09-30",
+                    164347.0
+                ],
+                [
+                    "2022-10-01",
+                    179755.0
+                ],
+                [
+                    "2022-10-02",
+                    198790.0
+                ],
+                [
+                    "2022-10-03",
+                    202664.0
+                ],
+                [
+                    "2022-10-04",
+                    206291.0
+                ],
+                [
+                    "2022-10-05",
+                    201610.0
+                ],
+                [
+                    "2022-10-06",
+                    192365.0
+                ],
+                [
+                    "2022-10-07",
+                    185580.0
+                ],
+                [
+                    "2022-10-08",
+                    190153.0
+                ],
+                [
+                    "2022-10-09",
+                    201633.0
+                ],
+                [
+                    "2022-10-10",
+                    211783.0
+                ],
+                [
+                    "2022-10-11",
+                    173602.0
+                ],
+                [
+                    "2022-10-12",
+                    168187.0
+                ],
+                [
+                    "2022-10-13",
+                    161171.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    28647.0
+                ],
+                [
+                    "2022-09-21",
+                    27885.0
+                ],
+                [
+                    "2022-09-22",
+                    28149.0
+                ],
+                [
+                    "2022-09-23",
+                    28191.0
+                ],
+                [
+                    "2022-09-24",
+                    28417.0
+                ],
+                [
+                    "2022-09-25",
+                    28256.0
+                ],
+                [
+                    "2022-09-26",
+                    27454.0
+                ],
+                [
+                    "2022-09-27",
+                    27552.0
+                ],
+                [
+                    "2022-09-28",
+                    26537.0
+                ],
+                [
+                    "2022-09-29",
+                    26250.0
+                ],
+                [
+                    "2022-09-30",
+                    26108.0
+                ],
+                [
+                    "2022-10-01",
+                    26538.0
+                ],
+                [
+                    "2022-10-02",
+                    27856.0
+                ],
+                [
+                    "2022-10-03",
+                    28514.0
+                ],
+                [
+                    "2022-10-04",
+                    28513.0
+                ],
+                [
+                    "2022-10-05",
+                    29401.0
+                ],
+                [
+                    "2022-10-06",
+                    28082.0
+                ],
+                [
+                    "2022-10-07",
+                    28100.0
+                ],
+                [
+                    "2022-10-08",
+                    27517.0
+                ],
+                [
+                    "2022-10-09",
+                    28134.0
+                ],
+                [
+                    "2022-10-10",
+                    27942.0
+                ],
+                [
+                    "2022-10-11",
+                    25825.0
+                ],
+                [
+                    "2022-10-12",
+                    26317.0
+                ],
+                [
+                    "2022-10-13",
+                    25454.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    81981.0
+                ],
+                [
+                    "2022-09-21",
+                    79133.0
+                ],
+                [
+                    "2022-09-22",
+                    79517.0
+                ],
+                [
+                    "2022-09-23",
+                    78983.0
+                ],
+                [
+                    "2022-09-24",
+                    80736.0
+                ],
+                [
+                    "2022-09-25",
+                    79580.0
+                ],
+                [
+                    "2022-09-26",
+                    76649.0
+                ],
+                [
+                    "2022-09-27",
+                    73526.0
+                ],
+                [
+                    "2022-09-28",
+                    70550.0
+                ],
+                [
+                    "2022-09-29",
+                    67763.0
+                ],
+                [
+                    "2022-09-30",
+                    68965.0
+                ],
+                [
+                    "2022-10-01",
+                    74186.0
+                ],
+                [
+                    "2022-10-02",
+                    79136.0
+                ],
+                [
+                    "2022-10-03",
+                    79398.0
+                ],
+                [
+                    "2022-10-04",
+                    78302.0
+                ],
+                [
+                    "2022-10-05",
+                    81886.0
+                ],
+                [
+                    "2022-10-06",
+                    77689.0
+                ],
+                [
+                    "2022-10-07",
+                    73717.0
+                ],
+                [
+                    "2022-10-08",
+                    72783.0
+                ],
+                [
+                    "2022-10-09",
+                    77167.0
+                ],
+                [
+                    "2022-10-10",
+                    79365.0
+                ],
+                [
+                    "2022-10-11",
+                    70122.0
+                ],
+                [
+                    "2022-10-12",
+                    68801.0
+                ],
+                [
+                    "2022-10-13",
+                    65709.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)",
+                "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)",
+                "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)"
+            ],
+            "selected": {
+                "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)": true,
+                "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)": true,
+                "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "2022-09-20",
+                "2022-09-21",
+                "2022-09-22",
+                "2022-09-23",
+                "2022-09-24",
+                "2022-09-25",
+                "2022-09-26",
+                "2022-09-27",
+                "2022-09-28",
+                "2022-09-29",
+                "2022-09-30",
+                "2022-10-01",
+                "2022-10-02",
+                "2022-10-03",
+                "2022-10-04",
+                "2022-10-05",
+                "2022-10-06",
+                "2022-10-07",
+                "2022-10-08",
+                "2022-10-09",
+                "2022-10-10",
+                "2022-10-11",
+                "2022-10-12",
+                "2022-10-13"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u6cb3\u5317\u7701\u5404\u7c7b\u6c61\u67d3\u7269\u6392\u653e\u91cf",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "dataZoom": [
+        {
+            "show": true,
+            "type": "slider",
+            "realtime": true,
+            "start": 40,
+            "end": 100,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        }
+    ]
+};
+        chart_007.setOption(option_007);
+    </script>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>                <div id="008" class="chart-container" style="position: absolute; width: 900px; height: 500px; top: 1700px; left: 980px;"></div>
+    <script>
+        var chart_008 = echarts.init(
+            document.getElementById('008'), 'white', {renderer: 'canvas'});
+        var option_008 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    105634.0
+                ],
+                [
+                    "2022-09-21",
+                    99152.0
+                ],
+                [
+                    "2022-09-22",
+                    94900.0
+                ],
+                [
+                    "2022-09-23",
+                    103534.0
+                ],
+                [
+                    "2022-09-24",
+                    107104.0
+                ],
+                [
+                    "2022-09-25",
+                    107265.0
+                ],
+                [
+                    "2022-09-26",
+                    104758.0
+                ],
+                [
+                    "2022-09-27",
+                    107818.0
+                ],
+                [
+                    "2022-09-28",
+                    102594.0
+                ],
+                [
+                    "2022-09-29",
+                    103811.0
+                ],
+                [
+                    "2022-09-30",
+                    100487.0
+                ],
+                [
+                    "2022-10-01",
+                    92427.0
+                ],
+                [
+                    "2022-10-02",
+                    94092.0
+                ],
+                [
+                    "2022-10-03",
+                    92793.0
+                ],
+                [
+                    "2022-10-04",
+                    93492.0
+                ],
+                [
+                    "2022-10-05",
+                    98556.0
+                ],
+                [
+                    "2022-10-06",
+                    101158.0
+                ],
+                [
+                    "2022-10-07",
+                    100128.0
+                ],
+                [
+                    "2022-10-08",
+                    85270.0
+                ],
+                [
+                    "2022-10-09",
+                    73925.0
+                ],
+                [
+                    "2022-10-10",
+                    75345.0
+                ],
+                [
+                    "2022-10-11",
+                    74285.0
+                ],
+                [
+                    "2022-10-12",
+                    68580.0
+                ],
+                [
+                    "2022-10-13",
+                    65988.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    10367.0
+                ],
+                [
+                    "2022-09-21",
+                    9718.0
+                ],
+                [
+                    "2022-09-22",
+                    9909.0
+                ],
+                [
+                    "2022-09-23",
+                    10506.0
+                ],
+                [
+                    "2022-09-24",
+                    10998.0
+                ],
+                [
+                    "2022-09-25",
+                    10785.0
+                ],
+                [
+                    "2022-09-26",
+                    10904.0
+                ],
+                [
+                    "2022-09-27",
+                    10988.0
+                ],
+                [
+                    "2022-09-28",
+                    10746.0
+                ],
+                [
+                    "2022-09-29",
+                    10821.0
+                ],
+                [
+                    "2022-09-30",
+                    9990.0
+                ],
+                [
+                    "2022-10-01",
+                    9538.0
+                ],
+                [
+                    "2022-10-02",
+                    9214.0
+                ],
+                [
+                    "2022-10-03",
+                    10023.0
+                ],
+                [
+                    "2022-10-04",
+                    9798.0
+                ],
+                [
+                    "2022-10-05",
+                    9918.0
+                ],
+                [
+                    "2022-10-06",
+                    10555.0
+                ],
+                [
+                    "2022-10-07",
+                    10579.0
+                ],
+                [
+                    "2022-10-08",
+                    9151.0
+                ],
+                [
+                    "2022-10-09",
+                    8348.0
+                ],
+                [
+                    "2022-10-10",
+                    8468.0
+                ],
+                [
+                    "2022-10-11",
+                    8226.0
+                ],
+                [
+                    "2022-10-12",
+                    7866.0
+                ],
+                [
+                    "2022-10-13",
+                    7871.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    39781.0
+                ],
+                [
+                    "2022-09-21",
+                    38270.0
+                ],
+                [
+                    "2022-09-22",
+                    36653.0
+                ],
+                [
+                    "2022-09-23",
+                    38503.0
+                ],
+                [
+                    "2022-09-24",
+                    40634.0
+                ],
+                [
+                    "2022-09-25",
+                    38364.0
+                ],
+                [
+                    "2022-09-26",
+                    40041.0
+                ],
+                [
+                    "2022-09-27",
+                    41294.0
+                ],
+                [
+                    "2022-09-28",
+                    40086.0
+                ],
+                [
+                    "2022-09-29",
+                    39643.0
+                ],
+                [
+                    "2022-09-30",
+                    39322.0
+                ],
+                [
+                    "2022-10-01",
+                    35857.0
+                ],
+                [
+                    "2022-10-02",
+                    36861.0
+                ],
+                [
+                    "2022-10-03",
+                    36650.0
+                ],
+                [
+                    "2022-10-04",
+                    33915.0
+                ],
+                [
+                    "2022-10-05",
+                    37145.0
+                ],
+                [
+                    "2022-10-06",
+                    39320.0
+                ],
+                [
+                    "2022-10-07",
+                    38575.0
+                ],
+                [
+                    "2022-10-08",
+                    35090.0
+                ],
+                [
+                    "2022-10-09",
+                    29927.0
+                ],
+                [
+                    "2022-10-10",
+                    32443.0
+                ],
+                [
+                    "2022-10-11",
+                    30703.0
+                ],
+                [
+                    "2022-10-12",
+                    28854.0
+                ],
+                [
+                    "2022-10-13",
+                    28171.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)",
+                "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)",
+                "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)"
+            ],
+            "selected": {
+                "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)": true,
+                "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)": true,
+                "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "2022-09-20",
+                "2022-09-21",
+                "2022-09-22",
+                "2022-09-23",
+                "2022-09-24",
+                "2022-09-25",
+                "2022-09-26",
+                "2022-09-27",
+                "2022-09-28",
+                "2022-09-29",
+                "2022-09-30",
+                "2022-10-01",
+                "2022-10-02",
+                "2022-10-03",
+                "2022-10-04",
+                "2022-10-05",
+                "2022-10-06",
+                "2022-10-07",
+                "2022-10-08",
+                "2022-10-09",
+                "2022-10-10",
+                "2022-10-11",
+                "2022-10-12",
+                "2022-10-13"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u6cb3\u5357\u7701\u5404\u7c7b\u6c61\u67d3\u7269\u6392\u653e\u91cf",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "dataZoom": [
+        {
+            "show": true,
+            "type": "slider",
+            "realtime": true,
+            "start": 40,
+            "end": 100,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        }
+    ]
+};
+        chart_008.setOption(option_008);
+    </script>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>                <div id="009" class="chart-container" style="position: absolute; width: 900px; height: 500px; top: 2250px; left: 40px;"></div>
+    <script>
+        var chart_009 = echarts.init(
+            document.getElementById('009'), 'white', {renderer: 'canvas'});
+        var option_009 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    52250.0
+                ],
+                [
+                    "2022-09-21",
+                    48623.0
+                ],
+                [
+                    "2022-09-22",
+                    50060.0
+                ],
+                [
+                    "2022-09-23",
+                    53133.0
+                ],
+                [
+                    "2022-09-24",
+                    53741.0
+                ],
+                [
+                    "2022-09-25",
+                    54163.0
+                ],
+                [
+                    "2022-09-26",
+                    50899.0
+                ],
+                [
+                    "2022-09-27",
+                    46799.0
+                ],
+                [
+                    "2022-09-28",
+                    46640.0
+                ],
+                [
+                    "2022-09-29",
+                    47955.0
+                ],
+                [
+                    "2022-09-30",
+                    47510.0
+                ],
+                [
+                    "2022-10-01",
+                    49630.0
+                ],
+                [
+                    "2022-10-02",
+                    51896.0
+                ],
+                [
+                    "2022-10-03",
+                    55166.0
+                ],
+                [
+                    "2022-10-04",
+                    56972.0
+                ],
+                [
+                    "2022-10-05",
+                    55278.0
+                ],
+                [
+                    "2022-10-06",
+                    55401.0
+                ],
+                [
+                    "2022-10-07",
+                    55882.0
+                ],
+                [
+                    "2022-10-08",
+                    58153.0
+                ],
+                [
+                    "2022-10-09",
+                    60193.0
+                ],
+                [
+                    "2022-10-10",
+                    60539.0
+                ],
+                [
+                    "2022-10-11",
+                    55033.0
+                ],
+                [
+                    "2022-10-12",
+                    47101.0
+                ],
+                [
+                    "2022-10-13",
+                    46202.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    10613.0
+                ],
+                [
+                    "2022-09-21",
+                    10161.0
+                ],
+                [
+                    "2022-09-22",
+                    10543.0
+                ],
+                [
+                    "2022-09-23",
+                    10873.0
+                ],
+                [
+                    "2022-09-24",
+                    10680.0
+                ],
+                [
+                    "2022-09-25",
+                    10788.0
+                ],
+                [
+                    "2022-09-26",
+                    10617.0
+                ],
+                [
+                    "2022-09-27",
+                    10434.0
+                ],
+                [
+                    "2022-09-28",
+                    10407.0
+                ],
+                [
+                    "2022-09-29",
+                    10470.0
+                ],
+                [
+                    "2022-09-30",
+                    10457.0
+                ],
+                [
+                    "2022-10-01",
+                    10479.0
+                ],
+                [
+                    "2022-10-02",
+                    10177.0
+                ],
+                [
+                    "2022-10-03",
+                    10268.0
+                ],
+                [
+                    "2022-10-04",
+                    10541.0
+                ],
+                [
+                    "2022-10-05",
+                    10638.0
+                ],
+                [
+                    "2022-10-06",
+                    10614.0
+                ],
+                [
+                    "2022-10-07",
+                    10641.0
+                ],
+                [
+                    "2022-10-08",
+                    10532.0
+                ],
+                [
+                    "2022-10-09",
+                    10902.0
+                ],
+                [
+                    "2022-10-10",
+                    10899.0
+                ],
+                [
+                    "2022-10-11",
+                    10389.0
+                ],
+                [
+                    "2022-10-12",
+                    10152.0
+                ],
+                [
+                    "2022-10-13",
+                    9747.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    19355.0
+                ],
+                [
+                    "2022-09-21",
+                    18632.0
+                ],
+                [
+                    "2022-09-22",
+                    19815.0
+                ],
+                [
+                    "2022-09-23",
+                    20187.0
+                ],
+                [
+                    "2022-09-24",
+                    20241.0
+                ],
+                [
+                    "2022-09-25",
+                    20541.0
+                ],
+                [
+                    "2022-09-26",
+                    19869.0
+                ],
+                [
+                    "2022-09-27",
+                    18742.0
+                ],
+                [
+                    "2022-09-28",
+                    18495.0
+                ],
+                [
+                    "2022-09-29",
+                    18177.0
+                ],
+                [
+                    "2022-09-30",
+                    18256.0
+                ],
+                [
+                    "2022-10-01",
+                    18623.0
+                ],
+                [
+                    "2022-10-02",
+                    19482.0
+                ],
+                [
+                    "2022-10-03",
+                    19964.0
+                ],
+                [
+                    "2022-10-04",
+                    19528.0
+                ],
+                [
+                    "2022-10-05",
+                    19723.0
+                ],
+                [
+                    "2022-10-06",
+                    19948.0
+                ],
+                [
+                    "2022-10-07",
+                    19611.0
+                ],
+                [
+                    "2022-10-08",
+                    19557.0
+                ],
+                [
+                    "2022-10-09",
+                    20630.0
+                ],
+                [
+                    "2022-10-10",
+                    21470.0
+                ],
+                [
+                    "2022-10-11",
+                    19570.0
+                ],
+                [
+                    "2022-10-12",
+                    17378.0
+                ],
+                [
+                    "2022-10-13",
+                    16187.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)",
+                "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)",
+                "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)"
+            ],
+            "selected": {
+                "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)": true,
+                "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)": true,
+                "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "2022-09-20",
+                "2022-09-21",
+                "2022-09-22",
+                "2022-09-23",
+                "2022-09-24",
+                "2022-09-25",
+                "2022-09-26",
+                "2022-09-27",
+                "2022-09-28",
+                "2022-09-29",
+                "2022-09-30",
+                "2022-10-01",
+                "2022-10-02",
+                "2022-10-03",
+                "2022-10-04",
+                "2022-10-05",
+                "2022-10-06",
+                "2022-10-07",
+                "2022-10-08",
+                "2022-10-09",
+                "2022-10-10",
+                "2022-10-11",
+                "2022-10-12",
+                "2022-10-13"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u94a2\u94c1\u884c\u4e1a\u5404\u7c7b\u6c61\u67d3\u7269\u6392\u653e\u91cf",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "dataZoom": [
+        {
+            "show": true,
+            "type": "slider",
+            "realtime": true,
+            "start": 40,
+            "end": 100,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        }
+    ]
+};
+        chart_009.setOption(option_009);
+    </script>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>                <div id="010" class="chart-container" style="position: absolute; width: 900px; height: 500px; top: 2250px; left: 980px;"></div>
+    <script>
+        var chart_010 = echarts.init(
+            document.getElementById('010'), 'white', {renderer: 'canvas'});
+        var option_010 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    8957.0
+                ],
+                [
+                    "2022-09-21",
+                    8538.0
+                ],
+                [
+                    "2022-09-22",
+                    8764.0
+                ],
+                [
+                    "2022-09-23",
+                    9407.0
+                ],
+                [
+                    "2022-09-24",
+                    9036.0
+                ],
+                [
+                    "2022-09-25",
+                    8503.0
+                ],
+                [
+                    "2022-09-26",
+                    8572.0
+                ],
+                [
+                    "2022-09-27",
+                    8462.0
+                ],
+                [
+                    "2022-09-28",
+                    8676.0
+                ],
+                [
+                    "2022-09-29",
+                    8675.0
+                ],
+                [
+                    "2022-09-30",
+                    8512.0
+                ],
+                [
+                    "2022-10-01",
+                    8683.0
+                ],
+                [
+                    "2022-10-02",
+                    9017.0
+                ],
+                [
+                    "2022-10-03",
+                    9542.0
+                ],
+                [
+                    "2022-10-04",
+                    10663.0
+                ],
+                [
+                    "2022-10-05",
+                    10849.0
+                ],
+                [
+                    "2022-10-06",
+                    10683.0
+                ],
+                [
+                    "2022-10-07",
+                    11258.0
+                ],
+                [
+                    "2022-10-08",
+                    11175.0
+                ],
+                [
+                    "2022-10-09",
+                    10921.0
+                ],
+                [
+                    "2022-10-10",
+                    10754.0
+                ],
+                [
+                    "2022-10-11",
+                    10796.0
+                ],
+                [
+                    "2022-10-12",
+                    10097.0
+                ],
+                [
+                    "2022-10-13",
+                    8879.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    582.0
+                ],
+                [
+                    "2022-09-21",
+                    576.0
+                ],
+                [
+                    "2022-09-22",
+                    598.0
+                ],
+                [
+                    "2022-09-23",
+                    631.0
+                ],
+                [
+                    "2022-09-24",
+                    607.0
+                ],
+                [
+                    "2022-09-25",
+                    633.0
+                ],
+                [
+                    "2022-09-26",
+                    640.0
+                ],
+                [
+                    "2022-09-27",
+                    669.0
+                ],
+                [
+                    "2022-09-28",
+                    647.0
+                ],
+                [
+                    "2022-09-29",
+                    638.0
+                ],
+                [
+                    "2022-09-30",
+                    607.0
+                ],
+                [
+                    "2022-10-01",
+                    627.0
+                ],
+                [
+                    "2022-10-02",
+                    628.0
+                ],
+                [
+                    "2022-10-03",
+                    673.0
+                ],
+                [
+                    "2022-10-04",
+                    681.0
+                ],
+                [
+                    "2022-10-05",
+                    682.0
+                ],
+                [
+                    "2022-10-06",
+                    706.0
+                ],
+                [
+                    "2022-10-07",
+                    727.0
+                ],
+                [
+                    "2022-10-08",
+                    728.0
+                ],
+                [
+                    "2022-10-09",
+                    709.0
+                ],
+                [
+                    "2022-10-10",
+                    679.0
+                ],
+                [
+                    "2022-10-11",
+                    718.0
+                ],
+                [
+                    "2022-10-12",
+                    678.0
+                ],
+                [
+                    "2022-10-13",
+                    669.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    3601.0
+                ],
+                [
+                    "2022-09-21",
+                    3601.0
+                ],
+                [
+                    "2022-09-22",
+                    3726.0
+                ],
+                [
+                    "2022-09-23",
+                    3797.0
+                ],
+                [
+                    "2022-09-24",
+                    3760.0
+                ],
+                [
+                    "2022-09-25",
+                    3763.0
+                ],
+                [
+                    "2022-09-26",
+                    3949.0
+                ],
+                [
+                    "2022-09-27",
+                    3865.0
+                ],
+                [
+                    "2022-09-28",
+                    3829.0
+                ],
+                [
+                    "2022-09-29",
+                    3733.0
+                ],
+                [
+                    "2022-09-30",
+                    3895.0
+                ],
+                [
+                    "2022-10-01",
+                    3749.0
+                ],
+                [
+                    "2022-10-02",
+                    3870.0
+                ],
+                [
+                    "2022-10-03",
+                    3898.0
+                ],
+                [
+                    "2022-10-04",
+                    4028.0
+                ],
+                [
+                    "2022-10-05",
+                    4277.0
+                ],
+                [
+                    "2022-10-06",
+                    4217.0
+                ],
+                [
+                    "2022-10-07",
+                    4360.0
+                ],
+                [
+                    "2022-10-08",
+                    4304.0
+                ],
+                [
+                    "2022-10-09",
+                    4116.0
+                ],
+                [
+                    "2022-10-10",
+                    4058.0
+                ],
+                [
+                    "2022-10-11",
+                    4123.0
+                ],
+                [
+                    "2022-10-12",
+                    4063.0
+                ],
+                [
+                    "2022-10-13",
+                    3934.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)",
+                "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)",
+                "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)"
+            ],
+            "selected": {
+                "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)": true,
+                "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)": true,
+                "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "2022-09-20",
+                "2022-09-21",
+                "2022-09-22",
+                "2022-09-23",
+                "2022-09-24",
+                "2022-09-25",
+                "2022-09-26",
+                "2022-09-27",
+                "2022-09-28",
+                "2022-09-29",
+                "2022-09-30",
+                "2022-10-01",
+                "2022-10-02",
+                "2022-10-03",
+                "2022-10-04",
+                "2022-10-05",
+                "2022-10-06",
+                "2022-10-07",
+                "2022-10-08",
+                "2022-10-09",
+                "2022-10-10",
+                "2022-10-11",
+                "2022-10-12",
+                "2022-10-13"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u7126\u5316\u884c\u4e1a\u5404\u7c7b\u6c61\u67d3\u7269\u6392\u653e\u91cf",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "dataZoom": [
+        {
+            "show": true,
+            "type": "slider",
+            "realtime": true,
+            "start": 40,
+            "end": 100,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        }
+    ]
+};
+        chart_010.setOption(option_010);
+    </script>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>                <div id="011" class="chart-container" style="position: absolute; width: 900px; height: 500px; top: 2800px; left: 40px;"></div>
+    <script>
+        var chart_011 = echarts.init(
+            document.getElementById('011'), 'white', {renderer: 'canvas'});
+        var option_011 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    10325.0
+                ],
+                [
+                    "2022-09-21",
+                    10294.0
+                ],
+                [
+                    "2022-09-22",
+                    10513.0
+                ],
+                [
+                    "2022-09-23",
+                    10968.0
+                ],
+                [
+                    "2022-09-24",
+                    11089.0
+                ],
+                [
+                    "2022-09-25",
+                    10869.0
+                ],
+                [
+                    "2022-09-26",
+                    10262.0
+                ],
+                [
+                    "2022-09-27",
+                    10007.0
+                ],
+                [
+                    "2022-09-28",
+                    9725.0
+                ],
+                [
+                    "2022-09-29",
+                    9535.0
+                ],
+                [
+                    "2022-09-30",
+                    9566.0
+                ],
+                [
+                    "2022-10-01",
+                    9245.0
+                ],
+                [
+                    "2022-10-02",
+                    9349.0
+                ],
+                [
+                    "2022-10-03",
+                    9437.0
+                ],
+                [
+                    "2022-10-04",
+                    10257.0
+                ],
+                [
+                    "2022-10-05",
+                    10327.0
+                ],
+                [
+                    "2022-10-06",
+                    10286.0
+                ],
+                [
+                    "2022-10-07",
+                    10000.0
+                ],
+                [
+                    "2022-10-08",
+                    10545.0
+                ],
+                [
+                    "2022-10-09",
+                    10525.0
+                ],
+                [
+                    "2022-10-10",
+                    10003.0
+                ],
+                [
+                    "2022-10-11",
+                    9246.0
+                ],
+                [
+                    "2022-10-12",
+                    10189.0
+                ],
+                [
+                    "2022-10-13",
+                    10262.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    615.0
+                ],
+                [
+                    "2022-09-21",
+                    626.0
+                ],
+                [
+                    "2022-09-22",
+                    655.0
+                ],
+                [
+                    "2022-09-23",
+                    651.0
+                ],
+                [
+                    "2022-09-24",
+                    647.0
+                ],
+                [
+                    "2022-09-25",
+                    660.0
+                ],
+                [
+                    "2022-09-26",
+                    654.0
+                ],
+                [
+                    "2022-09-27",
+                    643.0
+                ],
+                [
+                    "2022-09-28",
+                    729.0
+                ],
+                [
+                    "2022-09-29",
+                    760.0
+                ],
+                [
+                    "2022-09-30",
+                    740.0
+                ],
+                [
+                    "2022-10-01",
+                    743.0
+                ],
+                [
+                    "2022-10-02",
+                    789.0
+                ],
+                [
+                    "2022-10-03",
+                    760.0
+                ],
+                [
+                    "2022-10-04",
+                    726.0
+                ],
+                [
+                    "2022-10-05",
+                    745.0
+                ],
+                [
+                    "2022-10-06",
+                    773.0
+                ],
+                [
+                    "2022-10-07",
+                    821.0
+                ],
+                [
+                    "2022-10-08",
+                    821.0
+                ],
+                [
+                    "2022-10-09",
+                    793.0
+                ],
+                [
+                    "2022-10-10",
+                    758.0
+                ],
+                [
+                    "2022-10-11",
+                    708.0
+                ],
+                [
+                    "2022-10-12",
+                    731.0
+                ],
+                [
+                    "2022-10-13",
+                    727.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    1700.0
+                ],
+                [
+                    "2022-09-21",
+                    1631.0
+                ],
+                [
+                    "2022-09-22",
+                    1530.0
+                ],
+                [
+                    "2022-09-23",
+                    1494.0
+                ],
+                [
+                    "2022-09-24",
+                    1437.0
+                ],
+                [
+                    "2022-09-25",
+                    1590.0
+                ],
+                [
+                    "2022-09-26",
+                    1528.0
+                ],
+                [
+                    "2022-09-27",
+                    1362.0
+                ],
+                [
+                    "2022-09-28",
+                    1450.0
+                ],
+                [
+                    "2022-09-29",
+                    1481.0
+                ],
+                [
+                    "2022-09-30",
+                    1455.0
+                ],
+                [
+                    "2022-10-01",
+                    1417.0
+                ],
+                [
+                    "2022-10-02",
+                    1602.0
+                ],
+                [
+                    "2022-10-03",
+                    1638.0
+                ],
+                [
+                    "2022-10-04",
+                    1684.0
+                ],
+                [
+                    "2022-10-05",
+                    1619.0
+                ],
+                [
+                    "2022-10-06",
+                    1501.0
+                ],
+                [
+                    "2022-10-07",
+                    1562.0
+                ],
+                [
+                    "2022-10-08",
+                    1756.0
+                ],
+                [
+                    "2022-10-09",
+                    1828.0
+                ],
+                [
+                    "2022-10-10",
+                    1884.0
+                ],
+                [
+                    "2022-10-11",
+                    1684.0
+                ],
+                [
+                    "2022-10-12",
+                    1746.0
+                ],
+                [
+                    "2022-10-13",
+                    1566.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)",
+                "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)",
+                "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)"
+            ],
+            "selected": {
+                "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)": true,
+                "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)": true,
+                "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "2022-09-20",
+                "2022-09-21",
+                "2022-09-22",
+                "2022-09-23",
+                "2022-09-24",
+                "2022-09-25",
+                "2022-09-26",
+                "2022-09-27",
+                "2022-09-28",
+                "2022-09-29",
+                "2022-09-30",
+                "2022-10-01",
+                "2022-10-02",
+                "2022-10-03",
+                "2022-10-04",
+                "2022-10-05",
+                "2022-10-06",
+                "2022-10-07",
+                "2022-10-08",
+                "2022-10-09",
+                "2022-10-10",
+                "2022-10-11",
+                "2022-10-12",
+                "2022-10-13"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u77f3\u5316\u884c\u4e1a\u5404\u7c7b\u6c61\u67d3\u7269\u6392\u653e\u91cf",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "dataZoom": [
+        {
+            "show": true,
+            "type": "slider",
+            "realtime": true,
+            "start": 40,
+            "end": 100,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        }
+    ]
+};
+        chart_011.setOption(option_011);
+    </script>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>                <div id="012" class="chart-container" style="position: absolute; width: 900px; height: 500px; top: 2800px; left: 980px;"></div>
+    <script>
+        var chart_012 = echarts.init(
+            document.getElementById('012'), 'white', {renderer: 'canvas'});
+        var option_012 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    29876.0
+                ],
+                [
+                    "2022-09-21",
+                    29370.0
+                ],
+                [
+                    "2022-09-22",
+                    31337.0
+                ],
+                [
+                    "2022-09-23",
+                    31692.0
+                ],
+                [
+                    "2022-09-24",
+                    30855.0
+                ],
+                [
+                    "2022-09-25",
+                    30745.0
+                ],
+                [
+                    "2022-09-26",
+                    30113.0
+                ],
+                [
+                    "2022-09-27",
+                    29564.0
+                ],
+                [
+                    "2022-09-28",
+                    28683.0
+                ],
+                [
+                    "2022-09-29",
+                    29223.0
+                ],
+                [
+                    "2022-09-30",
+                    28453.0
+                ],
+                [
+                    "2022-10-01",
+                    29513.0
+                ],
+                [
+                    "2022-10-02",
+                    32712.0
+                ],
+                [
+                    "2022-10-03",
+                    33781.0
+                ],
+                [
+                    "2022-10-04",
+                    33436.0
+                ],
+                [
+                    "2022-10-05",
+                    32637.0
+                ],
+                [
+                    "2022-10-06",
+                    32121.0
+                ],
+                [
+                    "2022-10-07",
+                    32175.0
+                ],
+                [
+                    "2022-10-08",
+                    25016.0
+                ],
+                [
+                    "2022-10-09",
+                    24065.0
+                ],
+                [
+                    "2022-10-10",
+                    19146.0
+                ],
+                [
+                    "2022-10-11",
+                    15550.0
+                ],
+                [
+                    "2022-10-12",
+                    15752.0
+                ],
+                [
+                    "2022-10-13",
+                    12882.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    2451.0
+                ],
+                [
+                    "2022-09-21",
+                    2390.0
+                ],
+                [
+                    "2022-09-22",
+                    2502.0
+                ],
+                [
+                    "2022-09-23",
+                    2575.0
+                ],
+                [
+                    "2022-09-24",
+                    2636.0
+                ],
+                [
+                    "2022-09-25",
+                    2561.0
+                ],
+                [
+                    "2022-09-26",
+                    2704.0
+                ],
+                [
+                    "2022-09-27",
+                    2757.0
+                ],
+                [
+                    "2022-09-28",
+                    2699.0
+                ],
+                [
+                    "2022-09-29",
+                    2724.0
+                ],
+                [
+                    "2022-09-30",
+                    2756.0
+                ],
+                [
+                    "2022-10-01",
+                    2878.0
+                ],
+                [
+                    "2022-10-02",
+                    2904.0
+                ],
+                [
+                    "2022-10-03",
+                    3024.0
+                ],
+                [
+                    "2022-10-04",
+                    2875.0
+                ],
+                [
+                    "2022-10-05",
+                    2839.0
+                ],
+                [
+                    "2022-10-06",
+                    2916.0
+                ],
+                [
+                    "2022-10-07",
+                    2884.0
+                ],
+                [
+                    "2022-10-08",
+                    2327.0
+                ],
+                [
+                    "2022-10-09",
+                    2067.0
+                ],
+                [
+                    "2022-10-10",
+                    1648.0
+                ],
+                [
+                    "2022-10-11",
+                    1384.0
+                ],
+                [
+                    "2022-10-12",
+                    1452.0
+                ],
+                [
+                    "2022-10-13",
+                    1364.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2022-09-20",
+                    1795.0
+                ],
+                [
+                    "2022-09-21",
+                    2623.0
+                ],
+                [
+                    "2022-09-22",
+                    2390.0
+                ],
+                [
+                    "2022-09-23",
+                    1951.0
+                ],
+                [
+                    "2022-09-24",
+                    2750.0
+                ],
+                [
+                    "2022-09-25",
+                    2914.0
+                ],
+                [
+                    "2022-09-26",
+                    3506.0
+                ],
+                [
+                    "2022-09-27",
+                    2898.0
+                ],
+                [
+                    "2022-09-28",
+                    2284.0
+                ],
+                [
+                    "2022-09-29",
+                    2433.0
+                ],
+                [
+                    "2022-09-30",
+                    2674.0
+                ],
+                [
+                    "2022-10-01",
+                    1883.0
+                ],
+                [
+                    "2022-10-02",
+                    2604.0
+                ],
+                [
+                    "2022-10-03",
+                    2451.0
+                ],
+                [
+                    "2022-10-04",
+                    2276.0
+                ],
+                [
+                    "2022-10-05",
+                    2813.0
+                ],
+                [
+                    "2022-10-06",
+                    2298.0
+                ],
+                [
+                    "2022-10-07",
+                    2679.0
+                ],
+                [
+                    "2022-10-08",
+                    2076.0
+                ],
+                [
+                    "2022-10-09",
+                    1988.0
+                ],
+                [
+                    "2022-10-10",
+                    1908.0
+                ],
+                [
+                    "2022-10-11",
+                    1782.0
+                ],
+                [
+                    "2022-10-12",
+                    1850.0
+                ],
+                [
+                    "2022-10-13",
+                    1584.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)",
+                "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)",
+                "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)"
+            ],
+            "selected": {
+                "\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf(kg)": true,
+                "\u9897\u7c92\u7269\u6392\u653e\u91cf(kg)": true,
+                "\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf(kg)": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "2022-09-20",
+                "2022-09-21",
+                "2022-09-22",
+                "2022-09-23",
+                "2022-09-24",
+                "2022-09-25",
+                "2022-09-26",
+                "2022-09-27",
+                "2022-09-28",
+                "2022-09-29",
+                "2022-09-30",
+                "2022-10-01",
+                "2022-10-02",
+                "2022-10-03",
+                "2022-10-04",
+                "2022-10-05",
+                "2022-10-06",
+                "2022-10-07",
+                "2022-10-08",
+                "2022-10-09",
+                "2022-10-10",
+                "2022-10-11",
+                "2022-10-12",
+                "2022-10-13"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u6c34\u6ce5\u884c\u4e1a\u5404\u7c7b\u6c61\u67d3\u7269\u6392\u653e\u91cf",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "dataZoom": [
+        {
+            "show": true,
+            "type": "slider",
+            "realtime": true,
+            "start": 40,
+            "end": 100,
+            "orient": "horizontal",
+            "zoomLock": false,
+            "filterMode": "filter"
+        }
+    ]
+};
+        chart_012.setOption(option_012);
+    </script>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>                <div id="013" class="chart-container" style="position: absolute; width: 900px; height: 500px; top: 3350px; left: 40px;"></div>
+    <script>
+        var chart_013 = echarts.init(
+            document.getElementById('013'), 'white', {renderer: 'canvas'});
+        var option_013 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u5510\u5c71\u5e02",
+                    "value": 1667694.0
+                },
+                {
+                    "name": "\u6ee8\u5dde\u5e02",
+                    "value": 1143054.0
+                },
+                {
+                    "name": "\u5929\u6d25\u5e02",
+                    "value": 977291.0
+                },
+                {
+                    "name": "\u804a\u57ce\u5e02",
+                    "value": 769187.0
+                },
+                {
+                    "name": "\u6d4e\u5357\u5e02",
+                    "value": 765135.0
+                },
+                {
+                    "name": "\u6d4e\u5b81\u5e02",
+                    "value": 757457.0
+                },
+                {
+                    "name": "\u6dc4\u535a\u5e02",
+                    "value": 741879.0
+                },
+                {
+                    "name": "\u90af\u90f8\u5e02",
+                    "value": 627529.0
+                },
+                {
+                    "name": "\u83cf\u6cfd\u5e02",
+                    "value": 583119.0
+                },
+                {
+                    "name": "\u6ca7\u5dde\u5e02",
+                    "value": 538656.0
+                },
+                {
+                    "name": "\u5b89\u9633\u5e02",
+                    "value": 535448.0
+                },
+                {
+                    "name": "\u5fb7\u5dde\u5e02",
+                    "value": 462419.0
+                },
+                {
+                    "name": "\u77f3\u5bb6\u5e84\u5e02",
+                    "value": 430493.0
+                },
+                {
+                    "name": "\u7126\u4f5c\u5e02",
+                    "value": 394988.0
+                },
+                {
+                    "name": "\u65b0\u4e61\u5e02",
+                    "value": 380489.0
+                }
+            ],
+            "radius": [
+                "40%",
+                "55%"
+            ],
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u5510\u5c71\u5e02",
+                "\u6ee8\u5dde\u5e02",
+                "\u5929\u6d25\u5e02",
+                "\u804a\u57ce\u5e02",
+                "\u6d4e\u5357\u5e02",
+                "\u6d4e\u5b81\u5e02",
+                "\u6dc4\u535a\u5e02",
+                "\u90af\u90f8\u5e02",
+                "\u83cf\u6cfd\u5e02",
+                "\u6ca7\u5dde\u5e02",
+                "\u5b89\u9633\u5e02",
+                "\u5fb7\u5dde\u5e02",
+                "\u77f3\u5bb6\u5e84\u5e02",
+                "\u7126\u4f5c\u5e02",
+                "\u65b0\u4e61\u5e02"
+            ],
+            "selected": {},
+            "type": "scroll",
+            "show": true,
+            "left": "80%",
+            "orient": "vertical",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "\u5404\u57ce\u5e02\u6c2e\u6c27\u5316\u7269\u6392\u653e\u91cf",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_013.setOption(option_013);
+    </script>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>                <div id="014" class="chart-container" style="position: absolute; width: 900px; height: 500px; top: 3350px; left: 980px;"></div>
+    <script>
+        var chart_014 = echarts.init(
+            document.getElementById('014'), 'white', {renderer: 'canvas'});
+        var option_014 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u6ee8\u5dde\u5e02",
+                    "value": 913412.0
+                },
+                {
+                    "name": "\u5510\u5c71\u5e02",
+                    "value": 699756.0
+                },
+                {
+                    "name": "\u804a\u57ce\u5e02",
+                    "value": 357779.0
+                },
+                {
+                    "name": "\u83cf\u6cfd\u5e02",
+                    "value": 318615.0
+                },
+                {
+                    "name": "\u6d4e\u5b81\u5e02",
+                    "value": 314873.0
+                },
+                {
+                    "name": "\u90af\u90f8\u5e02",
+                    "value": 279351.0
+                },
+                {
+                    "name": "\u6d4e\u5357\u5e02",
+                    "value": 251910.0
+                },
+                {
+                    "name": "\u5929\u6d25\u5e02",
+                    "value": 247448.0
+                },
+                {
+                    "name": "\u7126\u4f5c\u5e02",
+                    "value": 224389.0
+                },
+                {
+                    "name": "\u6dc4\u535a\u5e02",
+                    "value": 199132.0
+                },
+                {
+                    "name": "\u6ca7\u5dde\u5e02",
+                    "value": 182122.0
+                },
+                {
+                    "name": "\u5fb7\u5dde\u5e02",
+                    "value": 173200.0
+                },
+                {
+                    "name": "\u5b89\u9633\u5e02",
+                    "value": 172443.0
+                },
+                {
+                    "name": "\u77f3\u5bb6\u5e84\u5e02",
+                    "value": 163374.0
+                },
+                {
+                    "name": "\u90d1\u5dde\u5e02",
+                    "value": 147305.0
+                }
+            ],
+            "radius": [
+                "40%",
+                "55%"
+            ],
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6ee8\u5dde\u5e02",
+                "\u5510\u5c71\u5e02",
+                "\u804a\u57ce\u5e02",
+                "\u83cf\u6cfd\u5e02",
+                "\u6d4e\u5b81\u5e02",
+                "\u90af\u90f8\u5e02",
+                "\u6d4e\u5357\u5e02",
+                "\u5929\u6d25\u5e02",
+                "\u7126\u4f5c\u5e02",
+                "\u6dc4\u535a\u5e02",
+                "\u6ca7\u5dde\u5e02",
+                "\u5fb7\u5dde\u5e02",
+                "\u5b89\u9633\u5e02",
+                "\u77f3\u5bb6\u5e84\u5e02",
+                "\u90d1\u5dde\u5e02"
+            ],
+            "selected": {},
+            "type": "scroll",
+            "show": true,
+            "left": "80%",
+            "orient": "vertical",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "\u5404\u57ce\u5e02\u4e8c\u6c27\u5316\u786b\u6392\u653e\u91cf",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_014.setOption(option_014);
+    </script>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>                <div id="015" class="chart-container" style="position: absolute; width: 900px; height: 500px; top: 3900px; left: 40px;"></div>
+    <script>
+        var chart_015 = echarts.init(
+            document.getElementById('015'), 'white', {renderer: 'canvas'});
+        var option_015 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u5510\u5c71\u5e02",
+                    "value": 342559.0
+                },
+                {
+                    "name": "\u90af\u90f8\u5e02",
+                    "value": 113298.0
+                },
+                {
+                    "name": "\u6ee8\u5dde\u5e02",
+                    "value": 81031.0
+                },
+                {
+                    "name": "\u5b89\u9633\u5e02",
+                    "value": 66240.0
+                },
+                {
+                    "name": "\u5929\u6d25\u5e02",
+                    "value": 54212.0
+                },
+                {
+                    "name": "\u6d4e\u5357\u5e02",
+                    "value": 53261.0
+                },
+                {
+                    "name": "\u6ca7\u5dde\u5e02",
+                    "value": 48169.0
+                },
+                {
+                    "name": "\u65b0\u4e61\u5e02",
+                    "value": 43527.0
+                },
+                {
+                    "name": "\u77f3\u5bb6\u5e84\u5e02",
+                    "value": 42333.0
+                },
+                {
+                    "name": "\u83cf\u6cfd\u5e02",
+                    "value": 40684.0
+                },
+                {
+                    "name": "\u804a\u57ce\u5e02",
+                    "value": 37871.0
+                },
+                {
+                    "name": "\u7126\u4f5c\u5e02",
+                    "value": 37000.0
+                },
+                {
+                    "name": "\u79e6\u7687\u5c9b\u5e02",
+                    "value": 36749.0
+                },
+                {
+                    "name": "\u5fb7\u5dde\u5e02",
+                    "value": 34298.0
+                },
+                {
+                    "name": "\u6d4e\u5b81\u5e02",
+                    "value": 34162.0
+                }
+            ],
+            "radius": [
+                "40%",
+                "55%"
+            ],
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u5510\u5c71\u5e02",
+                "\u90af\u90f8\u5e02",
+                "\u6ee8\u5dde\u5e02",
+                "\u5b89\u9633\u5e02",
+                "\u5929\u6d25\u5e02",
+                "\u6d4e\u5357\u5e02",
+                "\u6ca7\u5dde\u5e02",
+                "\u65b0\u4e61\u5e02",
+                "\u77f3\u5bb6\u5e84\u5e02",
+                "\u83cf\u6cfd\u5e02",
+                "\u804a\u57ce\u5e02",
+                "\u7126\u4f5c\u5e02",
+                "\u79e6\u7687\u5c9b\u5e02",
+                "\u5fb7\u5dde\u5e02",
+                "\u6d4e\u5b81\u5e02"
+            ],
+            "selected": {},
+            "type": "scroll",
+            "show": true,
+            "left": "80%",
+            "orient": "vertical",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "\u5404\u57ce\u5e02\u9897\u7c92\u7269\u6392\u653e\u91cf",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_015.setOption(option_015);
+    </script>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>    </div>
+    <script>
+            $('#001').css('border-style', 'dashed').css('border-width', '0px');$("#001>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#001'), function() { chart_001.resize()});
+            $('#002').css('border-style', 'dashed').css('border-width', '0px');$("#002>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#002'), function() { chart_002.resize()});
+            $('#003').css('border-style', 'dashed').css('border-width', '0px');$("#003>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#003'), function() { chart_003.resize()});
+            $('#004').css('border-style', 'dashed').css('border-width', '0px');$("#004>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#004'), function() { chart_004.resize()});
+            $('#005').css('border-style', 'dashed').css('border-width', '0px');$("#005>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#005'), function() { chart_005.resize()});
+            $('#006').css('border-style', 'dashed').css('border-width', '0px');$("#006>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#006'), function() { chart_006.resize()});
+            $('#007').css('border-style', 'dashed').css('border-width', '0px');$("#007>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#007'), function() { chart_007.resize()});
+            $('#008').css('border-style', 'dashed').css('border-width', '0px');$("#008>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#008'), function() { chart_008.resize()});
+            $('#009').css('border-style', 'dashed').css('border-width', '0px');$("#009>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#009'), function() { chart_009.resize()});
+            $('#010').css('border-style', 'dashed').css('border-width', '0px');$("#010>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#010'), function() { chart_010.resize()});
+            $('#011').css('border-style', 'dashed').css('border-width', '0px');$("#011>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#011'), function() { chart_011.resize()});
+            $('#012').css('border-style', 'dashed').css('border-width', '0px');$("#012>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#012'), function() { chart_012.resize()});
+            $('#013').css('border-style', 'dashed').css('border-width', '0px');$("#013>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#013'), function() { chart_013.resize()});
+            $('#014').css('border-style', 'dashed').css('border-width', '0px');$("#014>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#014'), function() { chart_014.resize()});
+            $('#015').css('border-style', 'dashed').css('border-width', '0px');$("#015>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#015'), function() { chart_015.resize()});
+            var charts_id = ['001','002','003','004','005','006','007','008','009','010','011','012','013','014','015'];
+function downloadCfg () {
+    const fileName = 'chart_config.json'
+    let downLink = document.createElement('a')
+    downLink.download = fileName
+
+    let result = []
+    for(let i=0; i<charts_id.length; i++) {
+        chart = $('#'+charts_id[i])
+        result.push({
+            cid: charts_id[i],
+            width: chart.css("width"),
+            height: chart.css("height"),
+            top: chart.offset().top + "px",
+            left: chart.offset().left + "px"
+        })
+    }
+
+    let blob = new Blob([JSON.stringify(result)])
+    downLink.href = URL.createObjectURL(blob)
+    document.body.appendChild(downLink)
+    downLink.click()
+    document.body.removeChild(downLink)
+}
+    </script>
+</body>
+</html>
